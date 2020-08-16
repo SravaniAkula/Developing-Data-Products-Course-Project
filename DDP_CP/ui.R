@@ -2,6 +2,11 @@ library(shiny)
 
 shinyUI(
     navbarPage("Shiny Application",
+               tabPanel ("How to Run Analysis",
+                         p("Choose any variable and the analysis tab will show the plot of that varibale against mpg"),
+                         p("By clicking the checkbox, outliers can be plotted"),
+                         p("The 'Regression model' will show the regression graph of chosen variable and mpg")
+               ),
                tabPanel("Analysis",
                         fluidPage(
                             titlePanel("The relationship between variables and miles per gallon (MPG)"),
